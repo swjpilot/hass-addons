@@ -71,6 +71,9 @@ AWS IAM secret access key used to access the S3 bucket.
 ### Option: `bucket_name` (required)
 Amazon S3 bucket used to store backups.
 
+### Option: `bucket_key` (optional, Default: "")
+Sub directory of the S3 bucket you want the backups placed in
+
 ### Option: `bucket_region` (optional, Default: us-east-1)
 AWS region where the S3 bucket was created. See https://aws.amazon.com/about-aws/global-infrastructure/ for all available regions.
 
