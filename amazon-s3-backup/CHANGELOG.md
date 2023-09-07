@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.3
+
+- Added Additional code to prune backups in S3 to a set number of days
+
 ## 1.2.2
 
 - Backup Script was running twice since it was still in services.d folder. Removed all unnecessary files.
