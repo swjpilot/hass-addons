@@ -1,4 +1,4 @@
-# Home Assistant Addons: Thomas' repository
+# Home Assistant Addons: Scott's repository
 
 Add-ons for Home Assistant written by Thomas Fritz.
 To add this repository:
