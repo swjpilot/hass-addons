@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.3
+## 1.2.4
 
 - Added Additional code to prune backups in S3 to a set number of days
 

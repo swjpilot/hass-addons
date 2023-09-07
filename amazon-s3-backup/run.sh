@@ -16,7 +16,7 @@ local_backups_to_keep="$(bashio::config 'local_backups_to_keep' '7')"
 remote_backups_to_keep="$(bashio::config 'remote_backups_to_keep' '31')"
 monitor_path="/backup"
 jq_filter=".backups|=sort_by(.date)|.backups|reverse|.[$local_backups_to_keep:]|.[].slug"
-s3_filter="'Contents[?LastModified<=`date-subtract(\'now\', "$remote_backups_to_keep", \'days\')`].[Key]' --output text"
+s3_filter="Contents[?LastModified<=$(date --iso-8601 -d " -$(remote_backups_to_keep) days")].[Key]" --output text"
 
 export AWS_ACCESS_KEY_ID="$(bashio::config 'aws_access_key')"
 export AWS_SECRET_ACCESS_KEY="$(bashio::config 'aws_secret_access_key')"

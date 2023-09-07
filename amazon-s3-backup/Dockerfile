@@ -8,6 +8,7 @@ RUN chmod a+x /run.sh
 
 # add aws-cli and deps
 RUN apk add -v --update --no-cache \
+        coreutils \
         python3 \
         py3-pip \
         groff \
