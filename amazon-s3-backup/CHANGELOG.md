@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.5
+
+- Added Virtual Environment code to fix the Alpine root installation problem
+
 ## 1.2.4
 
 - Added Additional code to prune backups in S3 to a set number of days
