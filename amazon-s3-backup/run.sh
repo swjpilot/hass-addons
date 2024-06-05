@@ -3,7 +3,7 @@
 # Home Assistant Community Add-on: Amazon S3 Backup
 # ==============================================================================
 #bashio::log.level "debug"
-
+. ./venv/bin/activate
 bashio::log.info "Starting Amazon S3 Backup..."
 
 bucket_name="$(bashio::config 'bucket_name')"

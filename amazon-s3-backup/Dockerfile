@@ -13,8 +13,10 @@ RUN apk add -v --update --no-cache \
         py3-pip \
         groff \
         less \
-        jq \
-        && \
+        jq
+RUN python3 -m venv venv && \
+    . ./venv/bin/activate && \
     pip3 install --upgrade awscli
+    
     
 CMD [ "/run.sh" ]  
